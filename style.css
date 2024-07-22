@@ -1,0 +1,231 @@
+/* HEADER, LOGO, MENU NAVIGASI */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px 10px 100px;
+  }
+  
+  .header-left {
+    text-align: left;
+  }
+
+  .header-right {
+    text-align: right;
+    padding: 0 0;
+    font-size: 19px;
+  }
+  
+  .logo {
+  display: inline-block;
+  }
+  
+  .logo img {
+    height: 60px;
+    vertical-align: middle;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: rgb(0, 100, 139);
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #000dff;
+  }
+
+
+/* BACKGROUND */
+  .background {
+    background-image: url("https://img.freepik.com/free-vector/decorative-watercolor-brush-stroke-design-blue-background_1055-17658.jpg?t=st=1720423052~exp=1720426652~hmac=50ca3cf6ed52c64d7261c30f98da7e4ff5aec94df2ece0a4d9f0b4734afa1c7d&w=900");
+    background-size: cover;
+  }
+
+
+/* TOP SECTION */
+  .top-section {
+    background-color: rgb(0, 100, 139);
+    padding: 20px;
+    width: fit-content;
+    margin: 150px auto;
+    margin-bottom: 5px;
+    border-radius: 25px;
+  }
+  
+  .profil-image-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 150px 0;
+  }
+  
+  .profil-image {
+    position: absolute;
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    top: -150;
+  }
+  
+  .profil-text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Tangerine', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin: 0;
+  }
+
+
+/* FOTO */
+.foto-wrapper {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .slide {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .prev,.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  .prev:hover,.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+
+/* TOMBOL/BUTTON */
+  .button-container {
+    text-align: center;
+    margin: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .button {
+    text-decoration: none;
+    background-color: rgb(9, 159, 159);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 25px 75px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: beige;
+    color: rgb(9, 159, 159);
+  }
+
+
+/* Tombol/Button Scroll to Top */
+.scroll-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 100;
+  background-color: #099f9f;
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-style: double;
+  border-color: #ffffff;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-to-top::before {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.scroll-to-top:hover {
+  background-color: beige;
+  color: rgb(9, 159, 159);
+}
+
+
+/* FOOTER */
+  footer {
+    background-color: rgb(0, 54, 75);
+    width: 100%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+        
+
+    }
+
+
+/* TEKS */
+  p {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+
+/* LAINNYA */
+  hr {
+    border: 1px dashed rgb(0, 77, 71);
+  }
